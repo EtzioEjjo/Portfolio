@@ -19,10 +19,10 @@
                 Message Me.
             </h2>
 
-            <form action="" method="" class="form" class="contact__form" id="contact-form">
+            <form action="/sendEmail" method="post" class="form" class="contact__form" id="contact-form">
                 <div class="contact__group">
                     <div class="contact__box">
-                        <input type="text" name="usernmae" class="contact__input" id="name" required placeholder="First Name">
+                        <input type="text" name="username" class="contact__input" id="name" required placeholder="First Name">
                         <label for="name" class="contact__label">First Name</label>
 
                     </div>
@@ -41,7 +41,7 @@
                 <button type="submit" class="contact__button button">
                     <i class="ri-send-plane-line"> Send</i>
                 </button>
-                <p class="contact__message" id="contact-message">aaaaaabbbbbbbbbbbbbbbbbbb</p>
+                <p class="contact__message" id="contact-message"></p>
 
 
             </form>

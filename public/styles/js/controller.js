@@ -107,7 +107,7 @@ const getCurrentIcon=()=>themeButton.classList.contains(iconTheme)?'ri-moon-line
 
 if(selectedTheme){
     document.body.classList[selectedTheme==='dark' ? 'add': 'remove'](darkTheme)
-    themeButton.classList[selectedIcon=== ri=='ri-moon-line' ?'add':'remove'](iconTheme)
+    themeButton.classList[selectedIcon==='ri-moon-line' ?'add':'remove'](iconTheme)
 
 }
 
@@ -119,5 +119,28 @@ themeButton.addEventListener('click',()=>{
     localStorage.setItem('selected-theme',getCurrentTheme())
     localStorage.setItem('selected-icon',getCurrentIcon())
 })
+
+
+
+
+/*==================After submitting the contact form============ */
+
+
+
+function onSuccess(isEmailSent){
+
+    const contact__message=document.getElementById('contact-message');
+
+   if(isEmailSent){
+    const text=document.createTextNode('Message has been sent successfully ✅.')
+    contact__message.appendChild(text);
+   }else{
+
+    const text=document.createTextNode('Something went wrong ❌, please try again.')
+    contact__message.appendChild(text);
+   }
+
+    
+}
 
 

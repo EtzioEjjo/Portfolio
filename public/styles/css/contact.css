@@ -330,7 +330,7 @@ text-align: center;
 
 
 /*===================Setting the dark mode*=====================/*/
-body.dark-theme{
+.dark-theme{
     --first-color: hsl(14, 80%, 50%);
     --black-color: hsl(0, 0%, 18%);
     --black-color-light: hsl(0, 0%, 30%);
@@ -907,6 +907,7 @@ body.dark-theme{
         column-gap: 1.25rem;
     }
 
+
     .contact__social-arrow{
         width: 40px;
     }
@@ -921,6 +922,15 @@ body.dark-theme{
 
     .dark-theme .contact__data{
         box-shadow: 4px 0 8px hsla(0,0%,4%,.3);
+    }
+
+    .dark-theme .projects__card:hover{
+        background-color: var( --black-color-light);
+    }
+
+    .dark-theme .contact__social-arrow{
+        filter: none;
+       transition: filter .4s;
     }
 
     .footer__container{

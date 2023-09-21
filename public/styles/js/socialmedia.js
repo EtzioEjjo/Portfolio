@@ -3,4 +3,4 @@ const socials={facebook:'https://www.facebook.com/Ezio.Ejjo',
                linkden:'https://www.linkedin.com/in/mohammed-ejjo-394a55285/'}
 
 
-module.exports =socials;               
+module.exports=socials;               
