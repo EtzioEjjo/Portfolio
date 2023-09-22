@@ -40,12 +40,47 @@ app.get('/mhmdIN',(req,res)=>{
 
 
 })
+app.get('/TheNodeBlog',(req,res)=>{
+    res.redirect(socials['TheNodeBlog'])
+
+
+})
+app.get('/Lisper',(req,res)=>{
+    res.redirect(socials['Lisper'])
+
+
+})
+app.get('/ToDoList',(req,res)=>{
+    res.redirect(socials['ToDoList'])
+
+
+})
+app.get('/ExpenseTracker',(req,res)=>{
+    res.redirect(socials['ExpenseTracker'])
+
+
+})
+
+app.get('/FlexGrid',(req,res)=>{
+    res.redirect(socials['FlexGrid'])
+
+
+})
+
+
+
+
+
 app.get('/',(req,res)=>{
     res.render('me.ejs')
 })
 
 
+
 app.post('/sendEmail',async (req,res)=>{
+    console.log(1234568);
+
+  
 
     const {username,email,message}=req.body;
     
@@ -56,9 +91,10 @@ app.post('/sendEmail',async (req,res)=>{
         text: `By ${username} \nEmail : ${email} \nMessage : ${message}`, // plain text body
         
       }) .then(info=>{
+        res.redirect('/');
 
       }).catch(err=>{
-        
+        //
         
       });
 

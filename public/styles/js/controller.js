@@ -123,24 +123,38 @@ themeButton.addEventListener('click',()=>{
 
 
 
-/*==================After submitting the contact form============ */
 
 
 
-function onSuccess(isEmailSent){
+// const contact__form=document.getElementById('contact-form');
 
-    const contact__message=document.getElementById('contact-message');
+// contact__form.addEventListener('submit',async (e)=>{
+  
+//     e.preventDefault()
+//     const contact__message=document.getElementById('contact-message');
 
-   if(isEmailSent){
-    const text=document.createTextNode('Message has been sent successfully ✅.')
-    contact__message.appendChild(text);
-   }else{
+//     contact__message.textContent='Message has been sent successfully ✅.'
 
-    const text=document.createTextNode('Something went wrong ❌, please try again.')
-    contact__message.appendChild(text);
-   }
+//     setTimeout(()=>{
+//         contact__message.textContent=''
+
+//     },5000)
+// })
+
+// function onSuccess(isEmailSent){
+
+//     const contact__message=document.getElementById('contact-message');
+
+//    if(isEmailSent){
+//     const text=document.createTextNode('Message has been sent successfully ✅.')
+//     contact__message.appendChild(text);
+//    }else{
+
+//     const text=document.createTextNode('Something went wrong ❌, please try again.')
+//     contact__message.appendChild(text);
+//    }
 
     
-}
+// }
 
 

@@ -67,7 +67,7 @@
 }
 .contact__button{
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .contact__input,
@@ -542,8 +542,7 @@ text-align: center;
         padding: 1.1rem 1.5rem;
         position: relative;
     }
-  
-  
+ 
 
      .contact__span::before,
      .contact__span::after{
@@ -881,7 +880,7 @@ text-align: center;
     .contact__button{
         display: block;
         z-index: 10;
-        margin-top: 1.25rem;
+        margin-top: 1.7rem;
         width: max-content;
     }
     .contact__data{
@@ -950,6 +949,65 @@ text-align: center;
    
     }
 
+    .footer__links{
+      
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__links{
+        width: 1125px;
+        justify-content: center;
+        align-items: center;
+    }
 
+
+    .section__title-1{
+        animation:fromTop 2s ;
+    }
+
+    .home__container .section__title-2{
+        animation: fromTop .8s ease;
+
+    }
+    .home__container .home__info{
+        animation: fromLeft .8s ease;
+
+    }
+    .home__container  .home__image{
+        animation: fromRight .8s ease;
+
+    }
+
+    @keyframes fromRight {
+        0%{
+            opacity: 0;
+            transform: translateX(10rem);
+        }100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+    @keyframes fromLeft {
+        0%{
+            opacity: 0;
+            transform: translateX(-10rem);
+        }100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fromTop {
+        0%{
+            opacity: 0;
+            transform: translateY(-10rem);
+        }100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
 
 }
